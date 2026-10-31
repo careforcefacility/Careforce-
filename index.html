@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CareForce Facility Solutions Private Limited provides hospital housekeeping, GDA staffing and facility support services in Delhi, India.">
+  <meta name="theme-color" content="#092b55">
+  <title>CareForce Facility Solutions | Hospital Housekeeping & GDA Services</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root{--navy:#092b55;--navy2:#123d70;--teal:#08a99e;--mint:#e8f8f6;--ink:#17283e;--muted:#627286;--white:#fff;--line:#dce7ee;--shadow:0 16px 45px rgba(9,43,85,.10)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    .topbar{background:var(--navy);color:#eaf7ff;font-size:13px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(12px);z-index:10;border-bottom:1px solid var(--line)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--navy);line-height:1.05}
+    .logo{width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,var(--navy),var(--teal));display:grid;place-items:center;color:#fff;font-size:22px;font-weight:900}
+    .brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--teal);margin-top:5px}
+    nav{display:flex;gap:22px;align-items:center;font-size:14px;font-weight:700;color:#33465b}
+    nav a:hover{color:var(--teal)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:9px;background:var(--teal);color:#fff;font-weight:800;border:0;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(.96)}.btn.outline{background:transparent;border:1px solid #b9d4d8;color:var(--navy)}
+    .menu{display:none;background:none;border:0;font-size:26px;color:var(--navy)}
+    .hero{background:radial-gradient(circle at 90% 10%,#1b6281 0,transparent 28%),linear-gradient(120deg,#08274d 0%,#10456d 65%,#087f7b 100%);color:#fff;padding:86px 0 78px;overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid #ffffff22;border-radius:50%;right:-150px;bottom:-260px;box-shadow:0 0 0 45px #ffffff09,0 0 0 90px #ffffff08}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center;position:relative;z-index:1}
+    .eyebrow{display:inline-block;color:#9df0e7;background:#ffffff14;border:1px solid #ffffff30;padding:7px 12px;border-radius:30px;font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}
+    h1{font-size:clamp(36px,5vw,58px);line-height:1.08;margin:20px 0}.hero p{font-size:18px;color:#e2eff7;max-width:640px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero .outline{color:#fff;border-color:#ffffff80}
+    .hero-card{background:#fff;color:var(--ink);padding:28px;border-radius:20px;box-shadow:0 25px 70px #00172e55}
+    .hero-card h3{color:var(--navy);margin:0 0 14px}.service-chip{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-weight:700}.service-chip:last-child{border:0}.chip-icon{width:38px;height:38px;border-radius:11px;background:var(--mint);display:grid;place-items:center;color:#087e79;font-size:18px}
+    section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.kicker{color:var(--teal);font-weight:900;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}.section-head h2{font-size:clamp(28px,4vw,40px);color:var(--navy);line-height:1.15;margin:9px 0 12px}.section-head p{color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.about-panel{background:linear-gradient(135deg,var(--mint),#f4fbff);border-radius:20px;padding:34px;border:1px solid #d7eeeb}
+    .about-panel .big{font-size:42px;font-weight:900;color:var(--teal);line-height:1}.about-panel h3{color:var(--navy)}
+    .ticks{padding:0;list-style:none}.ticks li{padding:8px 0 8px 29px;position:relative}.ticks li:before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:900}
+    .services{background:#f6fafc}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;box-shadow:0 7px 25px #092b5508}.card .icon{font-size:28px}.card h3{color:var(--navy);margin:10px 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}
+    .note{background:#fff8e8;border-left:4px solid #e2a33a;padding:14px 17px;border-radius:8px;color:#65512d;font-size:13px;margin-top:20px}
+    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.why{padding:22px 16px;border:1px solid var(--line);border-radius:14px;text-align:center}.why b{display:block;color:var(--navy);margin:8px 0}.why span{font-size:26px}
+    .cta{background:linear-gradient(120deg,var(--navy),#0c6876);color:#fff;border-radius:22px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font-size:30px;margin:0 0 8px}.cta p{margin:0;color:#d8eaf2}
+    .contact{background:#f6fafc}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:25px}.contact-box,.form-box{background:#fff;border:1px solid var(--line);border-radius:17px;padding:28px}.contact-item{padding:13px 0;border-bottom:1px solid var(--line)}.contact-item:last-child{border:0}.contact-item small{display:block;color:var(--muted);font-weight:700}.contact-item a{color:var(--navy);font-weight:700;overflow-wrap:anywhere}
+    label{display:block;font-size:13px;font-weight:800;color:var(--navy);margin:12px 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid #ccd9e2;border-radius:8px;font:inherit;background:#fff}textarea{min-height:105px;resize:vertical}.form-box .btn{width:100%;margin-top:16px}
+    footer{background:#061f3e;color:#dce9f1;padding:32px 0;font-size:13px}footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer strong{color:#fff}.smallprint{color:#a9bdcc;font-size:11px;margin-top:14px}
+    @media(max-width:850px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav.open nav{display:flex}.menu{display:block}.nav>.btn{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:60px 0}.cards{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}.cta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:520px){.cards{grid-template-columns:1fr}.hero-card{padding:21px}section{padding:58px 0}.cta{padding:28px}.topbar .container{font-size:11px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Hospital Housekeeping • GDA • Facility Support</span><span>Call: +91 85277 25747</span></div></div>
+  <header><div class="container nav" id="nav">
+    <a class="brand" href="#home"><span class="logo">CF</span><span>CareForce<small>FACILITY SOLUTIONS PRIVATE LIMITED</small></span></a>
+    <nav><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#why">Why CareForce</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="#contact">Request a Quote</a><button class="menu" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div></header>
+
+  <main>
+    <section class="hero" id="home"><div class="container hero-grid">
+      <div><span class="eyebrow">People • Care • Support</span>
+        <h1>Reliable People.<br>Professional Facility Support.</h1>
+        <p>CareForce Facility Solutions Private Limited supports hospitals and healthcare facilities with housekeeping, General Duty Assistant (GDA) and non-clinical facility support services.</p>
+        <div class="hero-actions"><a class="btn" href="#contact">Enquire Now</a><a class="btn outline" href="https://wa.me/918527725747?text=Hello%20CareForce%2C%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener">WhatsApp Us</a></div>
+      </div>
+      <div class="hero-card"><h3>Our Service Areas</h3>
+        <div class="service-chip"><span class="chip-icon">✦</span> Hospital Housekeeping</div>
+        <div class="service-chip"><span class="chip-icon">＋</span> General Duty Assistant (GDA)</div>
+        <div class="service-chip"><span class="chip-icon">♡</span> Patient Support Assistance</div>
+        <div class="service-chip"><span class="chip-icon">✓</span> Facility & Support Services</div>
+      </div>
+    </div></section>
+
+    <section id="about"><div class="container about-grid">
+      <div><span class="kicker">About CareForce</span><h2 style="color:var(--navy);font-size:36px;line-height:1.15">Supporting better healthcare environments</h2>
+        <p>CareForce Facility Solutions Private Limited is focused on providing dependable manpower and facility support for hospitals and healthcare organisations. We understand that a clean, orderly and supportive environment contributes to a better experience for patients, visitors and healthcare teams.</p>
+        <p>Our approach centres on role clarity, staff orientation, professional conduct and responsive coordination with the client’s designated team.</p>
+        <ul class="ticks"><li>Service-focused manpower support</li><li>Uniform and identity-based staff presentation</li><li>Site coordination and supervision approach</li><li>Client-oriented service planning</li></ul>
+      </div>
+      <div class="about-panel"><div class="big">01</div><h3>Our Mission</h3><p>To support healthcare facilities with responsible, professional and well-coordinated housekeeping and non-clinical support manpower.</p><div class="big" style="margin-top:24px">02</div><h3>Our Vision</h3><p>To build long-term partnerships through service consistency, dignity, trust and a commitment to continuous improvement.</p></div>
+    </div></section>
+
+    <section class="services" id="services"><div class="container"><div class="section-head"><span class="kicker">What We Do</span><h2>Our Services</h2><p>Support services planned around each facility’s requirements, scope of work and operating procedures.</p></div>
+      <div class="cards">
+        <article class="card"><span class="icon">🧹</span><h3>Hospital Housekeeping</h3><p>Housekeeping manpower for routine cleaning, upkeep of assigned areas, waste-segregation support as per hospital protocols and maintaining orderly surroundings.</p></article>
+        <article class="card"><span class="icon">＋</span><h3>GDA Services</h3><p>General Duty Assistant support for approved non-clinical duties, patient movement assistance and day-to-day support under hospital staff direction.</p></article>
+        <article class="card"><span class="icon">♡</span><h3>Patient Support</h3><p>Assistance with non-clinical comfort and mobility-related tasks within the assigned role and the facility’s policies.</p></article>
+        <article class="card"><span class="icon">🏢</span><h3>Facility Support</h3><p>Manpower support for designated facility operations and common-area upkeep, based on an agreed scope.</p></article>
+        <article class="card"><span class="icon">👔</span><h3>Uniform & Identification</h3><p>Professional staff presentation through role-based uniform identification and employee ID processes.</p></article>
+        <article class="card"><span class="icon">✓</span><h3>Supervision & Coordination</h3><p>Coordination with the client’s authorised representatives to review attendance, assigned duties and service feedback.</p></article>
+      </div>
+      <div class="note"><strong>Important role boundary:</strong> GDA and support personnel perform only assigned non-clinical duties. They do not independently diagnose, prescribe, administer medication, perform nursing procedures or make clinical decisions.</div>
+    </div></section>
+
+    <section id="why"><div class="container"><div class="section-head"><span class="kicker">The CareForce Approach</span><h2>Why Work With CareForce?</h2><p>A practical, people-first approach to facility support.</p></div>
+      <div class="why-grid">
+        <div class="why"><span>👥</span><b>Role Clarity</b><small>Defined responsibilities and reporting lines.</small></div>
+        <div class="why"><span>🎓</span><b>Staff Orientation</b><small>Site-specific briefing and work expectations.</small></div>
+        <div class="why"><span>🛡️</span><b>Safety Awareness</b><small>Respect for facility rules and safety protocols.</small></div>
+        <div class="why"><span>🤝</span><b>Client Coordination</b><small>Responsive communication and feedback.</small></div>
+      </div>
+    </div></section>
+
+    <section><div class="container"><div class="cta"><div><h2>Looking for dependable facility manpower?</h2><p>Share your location, service scope and staffing requirement with our team.</p></div><a class="btn" href="#contact">Discuss Your Requirement →</a></div></div></section>
+
+    <section class="contact" id="contact"><div class="container"><div class="section-head"><span class="kicker">Get In Touch</span><h2>Let’s Discuss Your Requirement</h2><p>Contact CareForce for a discussion about your hospital housekeeping and GDA support needs.</p></div>
+      <div class="contact-grid">
+        <div class="contact-box"><h3 style="color:var(--navy);margin-top:0">CareForce Facility Solutions Private Limited</h3>
+          <div class="contact-item"><small>Contact Person</small><strong>Mr. Bunty</strong> — Director</div>
+          <div class="contact-item"><small>Phone / WhatsApp</small><a href="tel:+918527725747">+91 85277 25747</a></div>
+          <div class="contact-item"><small>Email</small><a href="mailto:careforcefacility@gmail.com">careforcefacility@gmail.com</a></div>
+          <div class="contact-item"><small>Office Address</small><strong>L-18, Mohan Garden, Uttam Nagar, Near Happy Chowk, Delhi – 110059</strong></div>
+          <a class="btn" style="margin-top:18px" href="https://wa.me/918527725747?text=Hello%20CareForce%2C%20please%20contact%20me%20about%20your%20services." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+        <form class="form-box" onsubmit="sendEnquiry(event)"><h3 style="color:var(--navy);margin-top:0">Request a Quote</h3>
+          <label for="name">Your Name *</label><input id="name" name="name" required placeholder="Enter your name">
+          <label for="organisation">Hospital / Organisation</label><input id="organisation" name="organisation" placeholder="Organisation name">
+          <label for="phone">Phone Number *</label><input id="phone" name="phone" required type="tel" placeholder="Your contact number">
+          <label for="service">Service Required *</label><select id="service" name="service" required><option value="">Select a service</option><option>Hospital Housekeeping</option><option>GDA Services</option><option>Patient Support</option><option>Facility Support</option><option>Multiple Services</option></select>
+          <label for="message">Requirement Details</label><textarea id="message" name="message" placeholder="Location, number of staff, shift details or other requirements"></textarea>
+          <button class="btn" type="submit">Send Enquiry on WhatsApp</button>
+          <small style="display:block;color:var(--muted);margin-top:10px">Your message will open in WhatsApp for you to review and send.</small>
+        </form>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="container"><div class="foot"><div><strong>CareForce Facility Solutions Private Limited</strong><br>People • Care • Support</div><div>+91 85277 25747<br>careforcefacility@gmail.com</div><div>Delhi, India</div></div><div class="smallprint">Website content is an introduction to our services. Specific scope, staffing, compliance documentation and commercial terms are confirmed through a written proposal and agreement.</div><div class="smallprint">© <span id="year"></span> CareForce Facility Solutions Private Limited. All rights reserved.</div></div></footer>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    function sendEnquiry(e){
+      e.preventDefault();
+      const f=new FormData(e.target);
+      const msg=`Hello CareForce, I would like to make an enquiry.%0AName: ${encodeURIComponent(f.get('name'))}%0AHospital/Organisation: ${encodeURIComponent(f.get('organisation')||'Not provided')}%0APhone: ${encodeURIComponent(f.get('phone'))}%0AService: ${encodeURIComponent(f.get('service'))}%0ADetails: ${encodeURIComponent(f.get('message')||'Not provided')}`;
+      window.open('https://wa.me/918527725747?text='+msg,'_blank','noopener');
+    }
+  </script>
+</body>
+</html>
